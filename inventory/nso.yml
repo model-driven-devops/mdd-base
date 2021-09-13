@@ -1,0 +1,11 @@
+plugin: cisco.nso.nso_inventory
+# host_url: http://192.133.185.57:8080/jsonrpc 
+# username: admin
+# password: admin
+categories:
+  - version
+  # - vrfs
+  # - vlans
+  # - interfaces
+# device_pattern: CML*
+timeout: 600

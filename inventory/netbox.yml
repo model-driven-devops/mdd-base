@@ -1,0 +1,13 @@
+plugin: netbox.netbox.nb_inventory
+validate_certs: no
+flatten_config_context: yes
+config_context: yes 
+fetch_all: yes
+interfaces: yes
+compose:
+ ansible_network_os: platform.slug
+group_names_raw: yes
+group_by:
+  - sites
+  - region
+  - device_roles
