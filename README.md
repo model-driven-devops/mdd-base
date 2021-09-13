@@ -1,4 +1,4 @@
-# Model-Driven Devops VA Repo
+# Model-Driven Devops Repo
 
 This is the base repo for Model-Driven devops.  It has the needed python requirements (requirements.txt) and
 Ansible Collection (requirements.yml) to run a Model-Driven Devops pipeline.  It requires an inventory and
