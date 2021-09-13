@@ -1,4 +1,4 @@
-# Model-Driven Devops Base Repo
+# Model-Driven Devops VA Repo
 
 This is the base repo for Model-Driven devops.  It has the needed python requirements (requirements.txt) and
 Ansible Collection (requirements.yml) to run a Model-Driven Devops pipeline.  It requires an inventory and
@@ -19,7 +19,7 @@ pip3 install -r requirements.txt
 ```
 ### Ansible Collections
 ```
-ansible-galaxy collection install -r requirements.yml
+ansible-galaxy collection install -r collections/requirements.yml
 ```
 > Note: If you want to develop a collection, you need to comment out the collection in requirements.yml and clone the collection repo directly, e.g.
 ```
@@ -28,7 +28,8 @@ mkdir ciscops
 cd ciscops
 git@github.com:model-driven-devops/ansible-mdd.git mdd
 ```
-### Environment Vaariables
+
+### Environment Variables
 #### Netbox
 ```
 export NETBOX_HOST=x.x.x.x
@@ -53,19 +54,8 @@ export CML_LAB=mdd
 export CML_VERIFY_CERT=false
 ```
 
-## Inventory
-```
-cd inventory
-git clone git@github.com:model-driven-devops/mdd-inventory.git
-```
-
 # Playbooks
-## Update OC System
+## Update OC
 ```
-ansible-playbook -i inventory/mdd-inventory ciscops.mdd.update_system
-```
-
-## Update OC Interfaces
-```
-ansible-playbook -i inventory/mdd-inventory ciscops.mdd.update_interfaces
+ansible-playbook ciscops.mdd.oc_update
 ```
