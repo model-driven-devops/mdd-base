@@ -2,3 +2,6 @@
 *
 # Except this file
 !.gitignore
+!nso.yml
+!netbox.yml
+!cml.yml
