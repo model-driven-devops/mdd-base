@@ -1,7 +1,7 @@
 collections:
   - name: ciscops.mdd
-    source: https://github.com/model-driven-devops/ansible-mdd.git
+    source: git+https://github.com/model-driven-devops/ansible-mdd.git
     type: git
   - name: cisco.nso
-    source: https://github.com/model-driven-devops/ansible-nso.git
+    source: git+https://github.com/model-driven-devops/ansible-nso.git
     type: git
