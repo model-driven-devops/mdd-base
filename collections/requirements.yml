@@ -1,7 +1,5 @@
 collections:
   - name: ciscops.mdd
-    source: git+https://github.com/model-driven-devops/ansible-mdd.git
-    type: git
+  - name: cisco.cml
   - name: cisco.nso
-    source: git+https://github.com/model-driven-devops/ansible-nso.git
-    type: git
+  - name: netbox.netbox
